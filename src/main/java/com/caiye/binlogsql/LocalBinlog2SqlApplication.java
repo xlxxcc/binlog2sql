@@ -33,13 +33,13 @@ public class LocalBinlog2SqlApplication {
 
     static {
         List<FilterDbTableVo> includeDbTableVos = new ArrayList<FilterDbTableVo>() {{
-            add(new FilterDbTableVo("apolloconfigdb_sit", "appnamespace"));
-            add(new FilterDbTableVo("apolloconfigdb_sit", "namespace"));
-            add(new FilterDbTableVo("apolloconfigdb_sit", "instanceconfig"));
-            add(new FilterDbTableVo("apolloconfigdb_sit", "commit"));
-            add(new FilterDbTableVo("apolloconfigdb_sit", "release"));
-            add(new FilterDbTableVo("apolloconfigdb_sit", "releasemessage"));
-            add(new FilterDbTableVo("apolloconfigdb_sit", "releasehistory"));
+            add(new FilterDbTableVo("apolloconfigdb", "appnamespace"));
+            add(new FilterDbTableVo("apolloconfigdb", "namespace"));
+            add(new FilterDbTableVo("apolloconfigdb", "instanceconfig"));
+            add(new FilterDbTableVo("apolloconfigdb", "commit"));
+            add(new FilterDbTableVo("apolloconfigdb", "release"));
+            add(new FilterDbTableVo("apolloconfigdb", "releasemessage"));
+            add(new FilterDbTableVo("apolloconfigdb", "releasehistory"));
         }};
         ((CommonFilter) filter).setIncludeDbTableVos(includeDbTableVos);
         ((CommonFilter) filter).setEventFilters(Collections.singletonList(new EventFilter.PositionEventFilter(554948248L)));
