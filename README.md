@@ -16,4 +16,5 @@ update -> update
 binlog的读取和解析工具: https://github.com/shyiko/mysql-binlog-connector-java
 
 参考了 Python版的binlog2sql: https://github.com/danfengcao/binlog2sql
+
 参考了 Java版的binlog2sql: https://github.com/xin497668869/binlog2sql_java
