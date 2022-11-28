@@ -8,9 +8,9 @@ binlog2sql工具的java版
 * 处理bit值为{0}问题
 
 ## 回滚规则:
-delete -> insert
-insert -> delete
-update -> update
+* delete -> insert
+* insert -> delete
+* update -> update
 
 ## 参照
 binlog的读取和解析工具: https://github.com/shyiko/mysql-binlog-connector-java
